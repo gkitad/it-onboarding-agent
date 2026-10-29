@@ -105,7 +105,7 @@ export default function Home() {
         <div>
           <p className={styles.brand}>Onboarding Agent</p>
           <p className={styles.muted}>
-            An AI agent that provisions new hires and offboards leavers, with a person approving anything sensitive.
+            Sets up new hires and closes out people who leave. Anything sensitive waits for your approval.
           </p>
         </div>
         <button className={styles.secondary} onClick={reset} disabled={busy}>
@@ -166,14 +166,14 @@ export default function Home() {
             <section className={styles.intro}>
               <h2>What the agent does</h2>
               <p>
-                You describe a new hire or a departure in plain words. The agent reads the department&apos;s
-                access policy and works through the directory one tool call at a time: accounts, licenses,
-                groups, hardware, tasks for the teams that do the physical work, and email drafts for the
-                manager.
+                Describe a new hire or someone leaving, the way you&apos;d write it in a ticket. The agent reads
+                the department&apos;s access policy and works through the directory one step at a time. It
+                creates the account, assigns licenses and groups, orders the laptop, opens tasks for the people
+                who do the hands-on work and drafts an email for the manager.
               </p>
               <p>
                 Access to payroll files or employee records, and disabling an account, wait for you to approve.
-                Admin and production access are refused outright. Every change lands in the audit log.
+                Admin and production access are always refused. Every change is written to the audit log.
               </p>
               <p className={styles.muted}>
                 The directory is simulated and resets whenever you like. Try the examples: one has a name

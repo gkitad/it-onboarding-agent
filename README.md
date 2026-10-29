@@ -17,7 +17,7 @@ When something goes wrong it doesn't stop: out-of-stock hardware gets backordere
 ## How it works
 
 - **Agent loop** (`src/lib/agent.ts`): Claude (`claude-haiku-5-5`) with tool use, one tool call per turn so every step is visible and auditable. A hard cap of 30 model calls per run.
-- **Tools** (`src/lib/tools.ts`): 13 tools that read and change the simulated directory (`src/lib/company.ts`) — users, groups, license pools, hardware inventory, tasks, email drafts.
+- **Tools** (`src/lib/tools.ts`): 13 tools that read and change the simulated directory (`src/lib/company.ts`): users, groups, license pools, hardware inventory, tasks, email drafts.
 - **Approvals enforced in code, not in the prompt.** Adding someone to a sensitive group (payroll files, employee records) or disabling an account pauses the run until a person approves or denies it. Domain-Admins and Prod-Access are refused outright, so a request that asks for them can't talk its way in.
 - **Stateless server, signed state.** The run's conversation, directory and step count travel with the browser between requests, signed with HMAC-SHA256 (`src/lib/state.ts`), so a visitor can't edit the history, the directory or the step budget between calls.
 - **Live progress**: the API streams newline-delimited JSON, so each tool call and directory change appears as it happens.
