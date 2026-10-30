@@ -188,7 +188,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <p>
-          A portfolio project by <a href="https://portfolio-eosin-delta-24.vercel.app/">Anthony Jaimez</a>.
+          A portfolio project by <a href="https://www.anthonyjaimez.com/">Anthony Jaimez</a>.
           Runs on the Claude API with tool use.{" "}
           <a href="https://github.com/gkitad/it-onboarding-agent">Source on GitHub</a>
         </p>

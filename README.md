@@ -4,7 +4,7 @@ An AI agent that onboards new hires and offboards departing employees. You descr
 
 **Live demo:** https://it-onboarding-agent-nine.vercel.app/
 
-Built by [Anthony Jaimez](https://portfolio-eosin-delta-24.vercel.app/), from years of doing this work by hand on enterprise service desks.
+Built by [Anthony Jaimez](https://www.anthonyjaimez.com/), from years of doing this work by hand on enterprise service desks.
 
 ## What it does
 
